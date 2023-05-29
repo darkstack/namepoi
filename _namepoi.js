@@ -14,7 +14,7 @@ document.querySelector('head').appendChild(document.createElement('script').appe
   var usersList = function ()
   {
     if(!!vueAppTest.users){
-     return Object.entries(vueApp.users).map(([key,value])=>{return {'id' : key,'name' :value.name}});Object.entries(vueApp.users).map(([key,value])=>{return {'id' : key,'name' :value.name}});
+     return Object.entries(vueAppTest.users).map(([key,value])=>{return {'id' : key,'name' :value.name}});Object.entries(vueApp.users).map(([key,value])=>{return {'id' : key,'name' :value.name}});
     }
     else{
      return vueAppTest.getUserListForListPopup();

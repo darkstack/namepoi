@@ -28,7 +28,7 @@ document.querySelector('head').appendChild(document.createElement('script').appe
       var input = document.getElementById('input-textbox');
       var text = input.value.split(' ');
       var lastWord = text[text.length - 1];
-      for (user of Object.entries(vueApp.users)){
+      for (user of usersList()){
         if(user.name.indexOf(lastWord)== 0){
           input.value = input.value + user.name.substring(lastWord.length)+' ';
           e.preventDefault()

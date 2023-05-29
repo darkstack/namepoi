@@ -45,10 +45,9 @@ document.querySelector('head').appendChild(document.createElement('script').appe
     console.log('obs');
     var el = document.getElementById('input-textbox')
     if(el) {
-      console.log("Adios");
       if(location.host === 'gikopoipoi.net')
       {
-        vueAppTest = vueApp._contenair._vnode.component.proxy;
+        vueAppTest = vueApp._container._vnode.component.proxy;
       }
       else
       {
@@ -56,6 +55,7 @@ document.querySelector('head').appendChild(document.createElement('script').appe
       }
       el.addEventListener("keydown", (e)=>{autoComplete(e)}, false);
       observer.disconnect();
+      console.log("Hooked");
     }
   }
 
